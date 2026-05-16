@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #7c6ef7;
+  --accent2: #56cfb2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f0f13;
+  color: #e8e8f0;
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, #e8e8f0 40%, #7c6ef7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .skill-bar-fill {
+    background: linear-gradient(90deg, #7c6ef7, #56cfb2);
+  }
+}
