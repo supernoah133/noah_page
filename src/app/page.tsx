@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { supabase } from '@/lib/supabase';
+
+export const dynamic = 'force-dynamic';
 import type { Profile } from '@/types';
 import HeroSection from '@/components/HeroSection';
 import SkillsSection from '@/components/SkillsSection';
