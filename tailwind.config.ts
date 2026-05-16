@@ -17,6 +17,15 @@ const config: Config = {
         muted:    '#7a7a8a',
         border:   '#2a2a38',
       },
+      keyframes: {
+        fadeUp: {
+          '0%':   { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        fadeUp: 'fadeUp 0.2s ease',
+      },
     },
   },
   plugins: [],
