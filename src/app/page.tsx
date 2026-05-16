@@ -33,11 +33,10 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function Home() {
-  const profile = await fetchProfile();
+export default function Home() {
   return (
     <main>
-      <HeroSection profile={profile} />
+      <HeroSection />
       <SkillsSection />
       <ProjectsSection />
     </main>
